@@ -1,0 +1,91 @@
+<!-- 
+Exercício 1. Lista de compras
+Crie uma página HTML que apresente uma lista de compras. Você deve dar um título à lista e usar
+marcadores em cada item. Depois da lista, a página deve exibir um link para o Mercado Livre.
+O resultado deve ficar parecido com o seguinte:
+Lista de compras
+• Ratoeiras
+• Travesseiro
+• Ração para o cachorro
+• Toner para impressora
+Ir para o Mercado Livre
+ -->
+
+// Resolução ex01.html:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+        <h1>Lista de compras</h1>
+        
+            </header>
+            <ul>
+                <li>Ratoeiras</li>
+                <li>Travesseiro</li>
+                <li>Ração para o cachorro</li>
+                <li>Toner para impressora</li>
+              </ul>
+              <p><a href="https://www.mercadolivre.com.br/"> Ir para o Mercado Livre</a></p>
+</body>
+</html>
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Exercício 2. Página de perfil
+Elabore uma página HTML contendo suas informações pessoais. Use elementos como títulos e
+parágrafos para descrever suas experiências. Imagine que você é um desenvolvedor de páginas web
+se apresentando para possíveis clientes.
+Exercício 3. Landing page
+Crie uma landing page parecida com esta que aparece na imagem a seguir. Procure uma imagem na
+Internet para usar no fundo da página. Sua página deve exibir um textos de diferentes tamanhos
+sobre a imagem. Você deve criar um arquivo CSS à parte, que será “chamado” pelo arquivo HTML
+-->
+
+// Resolução ex02.html:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+<h1 style="text-align: center;">Breve Biografia</h1>
+
+    </header>
+
+    <section>
+
+        <h1 style="text-align: center;">José Alexandre Pereira</h1>
+        
+    <br>
+    <div id="foto" style="text-align: center;">
+        <img id="imagem" src="fotoperfil.jpg" alt="foto de perfil">
+</div>
+<p style="text-align: center;">Sou estudante de Sistemas para internet no Instituto Federal de São Paulo, formado em informática pela ETEC Pedro Ferreira Alves, com 4 anos de experiência no mercado de trabalho no ramo de tecnologia, internet e telecomunicação. Trabalhei 2 anos e 4 meses como atendente call center de suporte técnico, auxiliando os clientes em questões técnicas relacionadas a produtos ou serviços. Após esse período fui promovido a Auxiliar Chefe de Almoxarifado, realizando gestão de pessoas, implementando medidas eficazes no controle de estoque, cuidando dos equipamentos e garantindo níveis ideias de estoque para a continuidade operacional. 
+
+    Após meu passado recente em Telecom, procuro uma carreira com foco técnico na área de desenvolvimento de software. Sou uma pessoa proativa, com facilidade em liderar e fazer acontecer, extremamente comunicativo, curioso e muito entusiasmado em ajudar as pessoas a resolver problemas do mundo real e virtual. </p>
+
+    </section>
+
+    <footer>
+<p style="text-align: center;">&copy;ZéAraguaia</p>
+    </footer>
+   
+
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

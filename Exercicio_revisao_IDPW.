@@ -89,3 +89,236 @@ sobre a imagem. Você deve criar um arquivo CSS à parte, que será “chamado�
 </html>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!--  Exercício 3. Landing page
+Crie uma landing page parecida com esta que aparece na imagem a seguir. Procure uma imagem na
+Internet para usar no fundo da página. Sua página deve exibir um textos de diferentes tamanhos
+sobre a imagem. Você deve criar um arquivo CSS à parte, que será “chamado” pelo arquivo HTML.
+-->
+
+// Resolução ex03.html:
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    .highlight {
+      color: rgb(187, 0, 0);
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="landing-page">
+    <div class="content">
+      <h1>Assita Já! Família <span class="highlight">Soprano</span>.</h1>
+      <p>Clique para ter acesso a todos os episódios.</p>
+      <a href="#produtos" class="btn">Ver Produtos</a>
+    </div>
+  </div>
+</body>
+</html>
+
+// Style.css:
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.landing-page {
+  background-image: url('sopranos.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(187, 0, 0);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!--  Exercício 4. Tabela de preços
+Reproduza a página exibida na imagem a seguir. Use as mesmas cores.
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OVOS DE PÁSCOA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #da5bb4;
+    }
+    
+    table {
+        background-color:#f9f9f9;
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<h1 style="text-align: center;">OVOS DE PÁSCOA</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>MARCA / SABOR</th>
+      <th>PESO</th>
+      <th>VALOR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Borcelle-Chocolate ao Leite</td>
+      <td>250gr</td>
+      <td>R$ 39,90</td>
+    </tr>
+    <tr>
+      <td>Borcelle Chocolate Branco</td>
+      <td>500gr</td>
+      <td>R$ 39,90</td>
+    </tr>
+    <tr>
+      <td>Faustino-Chocolate Meio Amargo</td>
+      <td>250gr</td>
+      <td>R$ 39,90</td>
+    </tr>
+    <tr>
+        <td>Faustino-Crocante de Amendoim</td>
+        <td>500gr</td>
+        <td>R$ 49,90</td>
+      </tr>
+      <tr>
+        <td>Borcelle-Nozes</td>
+        <td>750gr</td>
+        <td>R$ 39,90</td>
+      </tr>
+      <tr>
+        <td>Faustino-Chocolate Meio Amargo</td>
+        <td>250gr</td>
+        <td>R$ 123,90</td>
+      </tr>
+      <tr>
+        <td>Faustino-Castanha de Caju</td>
+        <td>250gr</td>
+        <td>RS 55,90</td>
+      </tr>f2f2f2s
+        <td>Borcelle Castanha do Pará</td>
+        <td>750gr</td>
+        <td>R$ 99,90</td>
+      </tr>
+      <tr>
+        <td>Faustino-Passas ao Rum</td>
+        <td>250gr</td>
+        <td>RS 55,90</td>
+      </tr>
+      <tr>
+        <td>Faustino-Crocante de Laranja</td>
+        <td>500gr</td>
+        <td>R$ 49,90</td>
+      </tr>
+      <tr>
+        <td>Borcelle-Nozes</td>
+        <td>250gr</td>
+        <td>R$ 59,90</td>
+      </tr>
+      <tr>
+        <td>Borcelle-Trufado Morango</td>
+        <td>500gr</td>
+        <td>R$ 55,90</td>
+      </tr>
+      <tr>
+        <td>Borcelle Trufado Passas ao Rum</td>
+        <td>750gr</td>
+        <td>R$ 89,90</td>
+      </tr>
+      <tr>
+        <td>Borcelle - Trufado Creme de Avelä</td>
+        <td>250gr</td>
+        <td>R$ 59,90</td>
+      </tr>
+      <tr>
+        <td>Faustino-Trufado Licor de Cereja</td>
+        <td>250gr</td>
+        <td>R$ 59,90</td>
+      </tr>
+      <tr>
+        <td>Faustino-Trufado Maracujá</td>
+        <td>500gr</td>
+        <td>R$ 55,90</td>
+      </tr>
+      <tr>
+        <td>Faustino-Trufado Brigadeiro</td>
+        <td>250gr</td>
+        <td>RS- 49,90</td>
+      </tr>
+
+  </tbody>
+</table>
+
+<h4 style="text-align: center;">ESCOLHA SEU OVO E PEÇA PELO ZAP: (19) 3866-3010</h4>
+
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
